@@ -39,9 +39,6 @@ class MusicLibrary(private var userScript:String, private var libraryPath:String
         File(libraryPath).walk().forEach {
             if (it.extension.lowercase() !in supportedFormat) {
                 if (it.isDirectory) return@forEach
-                if (it.extension !in arrayOf("txt", "jpg", "png", "JPG", "cue", "log", "m3u", "", "jpeg", "m3u8", "tif", "db", "mega", "LOG", "pdf", "doc", "rtf", "md5", "htm", "nfo", "url", "zip", "cue~", "cbz", "sfv", "accurip", "webp")) {
-                    println(it.extension)
-                    println(it.path)}
                 return@forEach}
             val shortcutFile = File(newPath + shortcutPath(it) + ".lnk")
             shortcutFile.parentFile.mkdirs()
