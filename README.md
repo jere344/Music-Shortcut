@@ -1,4 +1,4 @@
-I am a beginner developper and it was made in a few hours as a learning project. 
+It was made in a few hours a long time ago as a learning project. 
 I do not guarantee the stability of this script.
 
 
